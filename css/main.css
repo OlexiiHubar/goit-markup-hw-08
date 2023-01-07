@@ -557,10 +557,11 @@ img {
   fill: #fff;
 }
 
-.subscribe-flex {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .subscribe-flex {
+    display: flex;
+  }
 }
-
 .filter-btn {
   font-weight: 500;
   font-size: 16px;
