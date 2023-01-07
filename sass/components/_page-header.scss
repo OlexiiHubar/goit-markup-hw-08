@@ -56,6 +56,16 @@
 }
 
 @include tablet {
+    .navigation__item:hover .navigation__link, 
+    .navigation__item:focus .navigation__link{
+        color: $accent;
+    }
+
+    .navigation__link.current {
+        color: $accent;
+        
+    }
+
     .contact__link {
         display: inline-flex;
         align-items: center;
@@ -75,6 +85,10 @@
             margin-bottom: 10px;
     }
 }
+    .contact__item:hover,
+    .contact__item:focus {
+        color: $accent;
+    }
     .icon-envelope {
         margin-right: 8px;
     
@@ -94,19 +108,7 @@
     .contact__item {
         color: $add-text-color;
     }
-    
-    .icon-envelope {
-        margin-right: 10px;
-    
-        fill: currentColor;
-    }
-    
-    .icon-smartphone {
-        margin-right: 10px;
-    
-        fill: currentColor;
-    
-    }
+
 }
 
 @include desktop {
@@ -118,8 +120,24 @@
             margin-right: 50px;
         }
     }
-    .contact__list .contact__item{
+    .contact__list .contact__item {
         margin-bottom: 0;
+    }
+    .contact__list .contact__item:hover,
+    .contact__list .contact__item:focus {
+        color: $accent;
+    }
+    .icon-envelope {
+        margin-right: 10px;
+    
+        fill: currentColor;
+    }
+    
+    .icon-smartphone {
+        margin-right: 10px;
+    
+        fill: currentColor;
+    
     }
 }
 
