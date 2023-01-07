@@ -1,0 +1,50 @@
+.hero {
+    padding: 118px, 60px;
+
+    text-align: center;
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-mob-1x.jpg);
+    @include retina {
+            background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-mob-2x.jpg);
+            background-size: cover;
+  }
+    background-color: $hero-bcg-color;
+    background-repeat: no-repeat;
+    background-position: center;  
+    @include tablet {
+        height: 459px;
+    }
+    @include desktop {
+        height: 600px;
+    }
+}
+
+.hero__title {
+    width: 100%;
+    margin: 0 auto 30px;
+
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $white-color;
+
+    @include tablet {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+    }
+    @include desktop {
+        
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36px;
+
+        
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+}
+

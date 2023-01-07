@@ -1,0 +1,60 @@
+.team {
+    background-color: $additional-bcg-color;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-list__item {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    border-radius: 0 0 4px 4px;
+    background-color: $white-color;
+    box-shadow: $photo-shadow-color;
+    
+    
+
+
+    @include tablet {
+        width: calc((100% - 60px) / 2);
+        margin-left: 0;
+        margin-right: 0;
+        &:not(:nth-child(2n)){
+            margin-right: 30px;
+        };
+        }
+
+    @include desktop {
+        width: calc((100% - 120px) / 4);
+        &:not(:last-child){
+            margin-right: 30px;
+        };
+        }    
+}
+
+.card-list__photo {
+    margin-bottom: 30px;
+}
+
+.card-list__name {
+    margin-bottom: 10px;
+}
+
+.card-list__name,
+.card-list__pos  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.card-list__pos {
+    margin-bottom: 16px;
+    font-weight: 400;
+
+    color: $add-text-color;
+}

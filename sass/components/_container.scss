@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include tel {
+        width: 480px;
+    }
+    
+    @include tablet {
+        width: 768px;
+    }
+    
+    @include desktop {
+        width: 1200px;
+    }
+}
+
+@include tablet{
+.container--flex {
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+@include tablet {
+.container--flex-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+}
+
+@include desktop {
+.container--flex-footer{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}   
+}

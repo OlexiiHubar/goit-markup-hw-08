@@ -1,0 +1,128 @@
+.page-header {
+    border-bottom: 1px solid;
+    border-color: $header-border-color;
+}
+
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    background-color: $white-color;
+    @include tablet {
+        display: none;
+    }
+}
+
+@include tablet {
+.navigation__list {
+    display: flex;
+    margin-left: 88px;
+
+    & .navigation__item:not(:last-child) {
+        margin-right: 50px;
+         }
+    }
+
+
+}
+
+
+
+
+.navigation__link {
+    display: none;
+    @include tablet {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $basic-logo-color;
+
+    transition: color $transition-time $transition-cubic;
+    }
+}
+
+.contact__link {
+    display: none;
+}
+.navigation,
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@include tablet {
+    .contact__link {
+        display: inline-flex;
+        align-items: center;
+        
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        
+    
+        transition: color $transition-time $transition-cubic;
+        
+    }
+    .contact__item {
+        color: $add-text-color;
+        
+        &:not(:last-child) {
+            margin-bottom: 10px;
+    }
+}
+    .icon-envelope {
+        margin-right: 8px;
+    
+        fill: currentColor;
+    }
+    
+    .icon-smartphone {
+        margin-right: 8px;
+    
+        fill: currentColor;
+    
+    }
+    .contact__list {
+        padding: 21px 0;
+    }
+
+    .contact__item {
+        color: $add-text-color;
+    }
+    
+    .icon-envelope {
+        margin-right: 10px;
+    
+        fill: currentColor;
+    }
+    
+    .icon-smartphone {
+        margin-right: 10px;
+    
+        fill: currentColor;
+    
+    }
+}
+
+@include desktop {
+    .contact__list {
+        display: flex;
+        align-items: center;
+
+        & .contact__item:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+    .contact__list .contact__item{
+        margin-bottom: 0;
+    }
+}
+
+
+
+
