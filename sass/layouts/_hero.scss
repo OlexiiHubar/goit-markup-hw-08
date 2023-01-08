@@ -20,6 +20,7 @@
     }
     @include desktop {
         height: 600px;
+        padding: 200px 0;
         background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-desktop-1x.jpg);
         @include retina {
             background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-desktop-2x.jpg);
@@ -48,9 +49,12 @@
     }
     @include desktop {
         width: 600px;
+        height: 120px;
+        
+
         font-weight: 900;
         font-size: 44px;
-        line-height: 1.36px;
+        line-height: 1.36;
 
         
         letter-spacing: 0.06em;
