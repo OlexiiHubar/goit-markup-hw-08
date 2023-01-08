@@ -4,8 +4,12 @@
 
 .card-list {
     display: flex;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap;    
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        }
+    }
+
 
 .card-list__item {
     width: 100%;
@@ -15,7 +19,11 @@
     border-radius: 0 0 4px 4px;
     background-color: $white-color;
     box-shadow: $photo-shadow-color;
-    
+    @media screen and (max-width: 767px) {
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
     
 
 
@@ -25,14 +33,21 @@
         margin-right: 0;
         &:not(:nth-child(2n)){
             margin-right: 30px;
-        };
+            }
+        &:nth-child(n+3) {
+            margin-bottom: 0;
+        }
         }
 
     @include desktop {
         width: calc((100% - 120px) / 4);
         &:not(:last-child){
             margin-right: 30px;
-        };
+        }
+        &:nth-child(n+1) {
+            margin-bottom: 0;
+            
+    }
         }    
 }
 

@@ -43,7 +43,8 @@
     .adress-container {
         margin-right: 70px;
     }
-
+}
+@include desktop{
     .social-link__container {
         margin-right: 93px;
     }
@@ -80,6 +81,10 @@
     .address-list,
     .address-list__item {
         text-align: start;
+        &:last-child {
+            margin-bottom: 0;
+            
+    }
     }
 }
 

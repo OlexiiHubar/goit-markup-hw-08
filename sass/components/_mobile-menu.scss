@@ -8,6 +8,8 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity $transition-time $transition-cubic,
+    visibility $transition-time $transition-cubic;
     
     background-color: $white-color;
     & .container {

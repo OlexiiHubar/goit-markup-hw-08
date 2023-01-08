@@ -1,5 +1,5 @@
 .hero {
-    padding: 118px, 60px;
+    padding: 118px 60px;
 
     text-align: center;
     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-mob-1x.jpg);
@@ -11,7 +11,6 @@
     background-repeat: no-repeat;
     background-position: center;  
     @include tablet {
-        height: 459px;
         background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-tablet-1x.jpg);
         @include retina {
             background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-tablet-2x.jpg);

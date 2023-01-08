@@ -1,5 +1,12 @@
 .features {
     padding-bottom: 0;
+
+    @media screen and (max-width: 767px) {
+            padding-bottom: 60px;
+        }
+    
+
+    
 }
 
 .group-list {
@@ -16,23 +23,34 @@
 .group-list__item {
     width: 100%;
     margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 
 
     @include tablet {
         width: calc((100% - 60px) / 2);
+        padding-bottom: 60px;
         &:not(:nth-child(2n)) {
             margin-right: 30px;
         }
-            
-    }
+        &:nth-child(n+3) {
+            margin-bottom: 0;
+        }
+
 
     @include desktop {
         width: calc((100% - 120px) / 4);
         &:not(:last-child){
             margin-right: 30px;
         }
+        &:nth-child(n+1) {
+            margin-bottom: 0;
+            
+    }
     }
 
+}
 }
 
 .group-list__container {
@@ -41,6 +59,8 @@
     align-items: center;
     height: 120px;
     margin-bottom: 30px;
+    // @media screen and (max-width: 767px)  {
+    //     padding-bottom: 60;}
 
     background-color: $additional-bcg-color;
 }
