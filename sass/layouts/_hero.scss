@@ -12,9 +12,19 @@
     background-position: center;  
     @include tablet {
         height: 459px;
+        background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-tablet-1x.jpg);
+        @include retina {
+            background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-tablet-2x.jpg);
+            background-size: cover;
+        }
     }
     @include desktop {
         height: 600px;
+        background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-desktop-1x.jpg);
+        @include retina {
+            background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-desktop-2x.jpg);
+            background-size: cover;
+        }
     }
 }
 
@@ -37,7 +47,7 @@
         text-align: center;
     }
     @include desktop {
-        
+        width: 600px;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36px;
