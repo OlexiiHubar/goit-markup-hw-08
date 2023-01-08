@@ -15,7 +15,7 @@
         background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-tablet-1x.jpg);
         @include retina {
             background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-tablet-2x.jpg);
-            background-size: cover;
+            
         }
     }
     @include desktop {
@@ -24,7 +24,7 @@
         background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-desktop-1x.jpg);
         @include retina {
             background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-desktop-2x.jpg);
-            background-size: cover;
+            
         }
     }
 }
