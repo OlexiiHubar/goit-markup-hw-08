@@ -335,6 +335,10 @@ img {
   color: #2196f3;
 }
 
+.menu-btn:hover .icon-mobile-menu {
+  fill: #2196f3;
+}
+
 .logo-link {
   padding: 16px 0;
 }
