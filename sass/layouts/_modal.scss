@@ -37,20 +37,27 @@
   padding: 40px;
   width: 80%;
   height: 95%;
-    @include tel {
-      width: 450px;
-      height: 609px;
-    }
-  overflow-y: scroll;
-    @include desktop {
-      width: 528px;
-      height: 581px;
-    }
+  
+
   border-radius: 4px;
   background-color: $white-color;
 
   transition: transform $transition-time $transition-cubic;
+
+  @include tel {
+    width: 450px;
+    height: 609px;
+    
+  }
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+    
+  }
+
 }
+
 
 .button-close {
   position: absolute;
