@@ -33,7 +33,7 @@
     background-color: $work-text-background;
 }
 
-@include tablet {
+@include desktop {
     .work {
         display: block;
     }
