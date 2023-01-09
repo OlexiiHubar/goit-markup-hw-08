@@ -1,9 +1,7 @@
 .features {
-    padding-bottom: 0;
+    padding-bottom: 60px;
 
-    @media screen and (max-width: 767px) {
-            padding-bottom: 60px;
-        }
+    
     
 
     
@@ -15,6 +13,7 @@
     @include tablet {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -30,7 +29,6 @@
 
     @include tablet {
         width: calc((100% - 60px) / 2);
-        padding-bottom: 60px;
         &:not(:nth-child(2n)) {
             margin-right: 30px;
         }

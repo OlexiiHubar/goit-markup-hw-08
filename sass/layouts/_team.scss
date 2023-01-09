@@ -4,11 +4,11 @@
 
 .card-list {
     display: flex;
-    flex-wrap: wrap;    
-    @media screen and (max-width: 767px) {
-        justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;   
+        
         }
-    }
+    
 
 
 .card-list__item {
@@ -22,6 +22,7 @@
     @media screen and (max-width: 767px) {
         &:last-child {
             padding-bottom: 0;
+            margin-bottom: 0;
         }
     }
     

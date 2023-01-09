@@ -620,7 +620,7 @@ img {
 }
 
 .hero {
-  padding: 118px 60px;
+  padding: 118px 0;
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/header-mob-1x.jpg);
   background-color: #2f303a;
@@ -689,12 +689,7 @@ img {
 }
 
 .features {
-  padding-bottom: 0;
-}
-@media screen and (max-width: 767px) {
-  .features {
-    padding-bottom: 60px;
-  }
+  padding-bottom: 60px;
 }
 
 .group-list {
@@ -704,6 +699,7 @@ img {
   .group-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -717,7 +713,6 @@ img {
 @media screen and (min-width: 768px) {
   .group-list__item {
     width: calc((100% - 60px) / 2);
-    padding-bottom: 60px;
   }
   .group-list__item:not(:nth-child(2n)) {
     margin-right: 30px;
@@ -804,11 +799,7 @@ img {
 .card-list {
   display: flex;
   flex-wrap: wrap;
-}
-@media screen and (max-width: 767px) {
-  .card-list {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .card-list__item {
@@ -822,6 +813,7 @@ img {
 @media screen and (max-width: 767px) {
   .card-list__item:last-child {
     padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -874,6 +866,7 @@ img {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .clients-list__item {
@@ -885,27 +878,27 @@ img {
 .clients-list__item:not(:nth-last-child(-n+2)) {
   margin-bottom: 30px;
 }
+
 @media screen and (min-width: 768px) {
   .clients-list__item {
     width: calc((100% - 90px) / 3);
+  }
+  .clients-list__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .clients-list__item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
   .clients-list__item:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .clients-list__item:nth-last-child(-n+3) {
-    margin-bottom: 0;
-  }
-}
 @media screen and (min-width: 1200px) {
   .clients-list__item {
     width: calc((100% - 180px) / 6);
   }
-  .clients-list__item:last-child {
-    margin-right: 0;
+  .clients-list__item:not(:last-child) {
+    margin-right: 30px;
   }
   .clients-list__item:nth-child(n+1) {
     margin-bottom: 0;
