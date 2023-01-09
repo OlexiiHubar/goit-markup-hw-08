@@ -2,27 +2,27 @@
     padding: 118px 0;
 
     text-align: center;
-    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-mob-1x.jpg);
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/header-mob-1x.jpg);
     @include retina {
-            background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-mob-2x.jpg);
+            background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/header-mob-2x.jpg);
             background-size: cover;
   }
     background-color: $hero-bcg-color;
     background-repeat: no-repeat;
     background-position: center;  
     @include tablet {
-        background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-tablet-1x.jpg);
+        background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/header-tablet-1x.jpg);
         @include retina {
-            background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-tablet-2x.jpg);
+            background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/header-tablet-2x.jpg);
             
         }
     }
     @include desktop {
         height: 600px;
         padding: 200px 0;
-        background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-desktop-1x.jpg);
+        background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/header-desktop-1x.jpg);
         @include retina {
-            background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../../images/header-desktop-2x.jpg);
+            background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/header-desktop-2x.jpg);
             
         }
     }
